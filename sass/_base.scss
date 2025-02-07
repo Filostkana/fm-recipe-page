@@ -1,0 +1,78 @@
+// COLORS
+$White: hsl(0, 0%, 100%);
+
+$Stone100: hsl(30, 54%, 90%);
+$Stone150: hsl(30, 18%, 87%);
+$Stone600: hsl(30, 10%, 34%);
+$Stone900: hsl(24, 5%, 18%);
+
+$Brown800: hsl(14, 45%, 36%);
+
+$Rose800: hsl(332, 51%, 32%);
+$Rose50: hsl(330, 100%, 98%);
+
+// MIXINS
+@mixin mq($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+// SET FONTS
+@font-face {
+    font-family: "Young Serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $Rose50;
+    
+}
+
+main {
+    width: 100%;
+    max-width: 72rem;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    background-color: $White;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
