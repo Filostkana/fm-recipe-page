@@ -47,7 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: $Rose50;
+    background-color: $Stone100;
     
 }
 
@@ -58,9 +58,13 @@ main {
     font-size: 1.6rem;
     border-radius: 3rem;
     background-color: $White;
+
+    @include mq(720px) {
+        margin: 10rem 0;
+    }
 }
 
-h1, h2 {
+h1, h2:not(.p-time__header) {
     font-family: "Young Serif", serif;
 }
 
